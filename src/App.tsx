@@ -1,20 +1,19 @@
 import './App.css'
 import { Footer, Header } from './components/common'
-import { Student } from './features/labs/Student'
+import { StudentCard } from './features/labs/Student'
+import { Student } from './models'
 
 function App() {
 
-  function abc() { }
+  const john: Student = {
+    name: 'john',
+    age: 3,
+  }
 
   return (
     <>
       <Header></Header>
-      <Student
-        name='truong'
-        age={18}
-        isHero
-        hobbyList={['eat', 'code', 'sleep']}
-        sayHello={abc} />
+      <StudentCard student={john} />
       <Footer></Footer>
     </>
   )
