@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Footer, Header } from '../common';
 
 export interface MainLayoutProps {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 export function MainLayout({ children }: MainLayoutProps) {

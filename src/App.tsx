@@ -1,5 +1,5 @@
 import './App.css'
-import { Footer, Header } from './components/common'
+import { Widget } from './components/common'
 import { MainLayout } from './components/Layout'
 import { MyText } from './features/labs/MyText'
 import { StudentCard } from './features/labs/Student'
@@ -34,6 +34,13 @@ function App() {
         <span>easy</span>
         <span>frontend</span>
       </MyText>
+
+      <div>
+        <div><Widget title='Earning Overview'>Chart 1</Widget></div>
+        <div><Widget title='Revenue Sources'>Chart 2</Widget></div>
+        <div><Widget title='Earning Overview'>Chart 3</Widget></div>
+        <div><Widget title='Earning Overview'>Chart 4</Widget></div>
+      </div>
 
     </>
   )
